@@ -9,20 +9,21 @@ public class TakeHomeTanaTest {
         System.out.println("Hello Welcome to tana test!!");
 
         Question1_GetLongestString question1GetLongestString = new Question1_GetLongestString();
+
         Question2_FirstUniqueProduct question2FirstUniqueProduct = new Question2_FirstUniqueProduct();
         Question4_3CommonStrings question43CommonStrings = new Question4_3CommonStrings();
         Question5_RotateList question5RotateList = new Question5_RotateList();
 
 
-        List<Character> chars = List.of('A', 'B', 'C', 'D');
-        List<String> strings = List.of("AABCDA", "ABCDZADC", "ABCDBCA", "ABCDABDCA");
+        List<Character> chars = List.of('A', 'B', 'C', 'D'); // allowed characters
+        List<String> strings = List.of("AABCDA", "ABCDZADC", "ABCDBCA", "ABCDABDCACC"); //input string
 
         String result = question1GetLongestString.getLongestString(chars, strings);
         System.out.println("Longest valid string: " + result);
 
 
         //Question 2 tests
-        String[] products = { "Apple", "Computer", "Apple", "Bag" };
+        String[] products = { "Apple", "Computer", "Apple", "Bag", "Computer" };
         String unique = question2FirstUniqueProduct.firstUniqueProduct(products);
         System.out.println("First unique product: " + unique);
 
@@ -47,6 +48,15 @@ public class TakeHomeTanaTest {
         List<String> rotatedList = question5RotateList.rotateList(pr, n);
 
         System.out.println("Rotated list: " + rotatedList);
+
+
+        Question3_ q3 = new Question3_();
+        int[] array = {1, 2, 3, 1, 4, 5, 2};
+        System.out.println("The distance is calculated is: " + q3.findClosestMinimumsDistance(array)); // Expected output: 3
+
+        int[] array2 = {5, 2, 8, 2, 6, 2};
+        System.out.println("The distance calculated is: " + q3.findClosestMinimumsDistance(array2)); // Expected output: 2
+
 
     }
 }

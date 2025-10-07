@@ -21,6 +21,8 @@ public class Question2_FirstUniqueProduct implements interfac.Question2_FirstUni
 
         // keeps the order of insertion
         Map<String, Integer> counts = new LinkedHashMap<>();
+        //Apple
+        //Apple
 
         // count how many times each product appears
         for (String item : products) {
