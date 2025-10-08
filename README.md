@@ -21,7 +21,7 @@ This repository showcases software development and problem-solving skills throug
 
 ```bash
 git clone https://github.com/JosephKithome/take-home-tana-tests.git
-cd take-home-tana-tests
+cd take-home-tana-test
 ```
 
 ### How to Run
